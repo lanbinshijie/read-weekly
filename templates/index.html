@@ -2,12 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Markdown Viewer</title>
+    <title>Passage Viewer</title>
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link crossorigin="anonymous" integrity="sha384-gXPPtw4xAxtl2Cea68s1jv7j1KR6HtYW5qAnWtAZ/Tb7/WCA1dNU2fnVOyuW/+O9" href="https://lib.baomitu.com/prism/latest/themes/prism.min.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Markdown Viewer</a>
+        <a class="navbar-brand" href="#">Weekly Viewer</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,6 +30,13 @@
             {{ content|safe }}
         </div>
     </div>
+
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <hr>
+            <p>© 2023 Passage Viewer. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>

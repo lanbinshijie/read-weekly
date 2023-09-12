@@ -51,6 +51,15 @@ def getNewestMD():
     # 获取最新的文章，通过名字
     return getPassage(newest_md_name, newest_md_url), newest_md_name
 
+def getPassageByid(idx):
+    try:
+        newest_md_name = getNewList()[int(idx)-1][0]
+        newest_md_url = getNewList()[int(idx)-1][1]
+        return getPassage(newest_md_name, newest_md_url), newest_md_name
+    except Exception as e:
+        print(e)
+        return "404 Not Found", "文章未找到"
+
 def getNewestList():
     # 发起 HTTP 请求获取 Markdown 内容
     response = requests.get("https://raw.githubusercontent.com/ascoders/weekly/master/readme.md")
